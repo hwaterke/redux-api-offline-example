@@ -1,0 +1,30 @@
+{
+  "name": "redux-api-offline-example-backend",
+  "version": "1.0.0",
+  "description": "Backend",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -r build/*",
+    "compile": "tsc",
+    "watch": "tsc -w",
+    "run:prod": "node build/index.js",
+    "run:dev": "nodemon build/index.js",
+    "dev": "run-p watch run:dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hwaterke/redux-api-offline-example.git"
+  },
+  "author": "Harold Waterkeyn",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "npm-run-all": "^4.0.2",
+    "typescript": "^2.3.2"
+  }
+}
